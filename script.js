@@ -1,13 +1,15 @@
 //your code here
-let mp = {};
-let touristSport = ['The Virupaksha Temple', 'Vivtoria memorial', 'tajmahal'];
+let mp={};
+let touristSports = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
-let articleLArray=[];
-for articleLessIteam = [];
-for(let i=0; i<touristSports[i].replace(/\bthe\b|\ban\b|\ba\b/gi, " ").trim();
+let articleLessArray=[];
+let articleLessIteam=[];
+for(let i=0; i<touristSports[i].length; i++)
+	{
+   articleLessItem=touristSports[i].replace(/\bthe\b|\ban\b|\ba\b/gi, " ").trim();
 	{
 		articleLessArraay.push(articleLessIteam);
-     mp[articleLessIteam] = touristSpots[i];
+     mp[articleLessIteam]=touristSpots[i];
 	}
 
     articleLessArray.sort();
