@@ -1,20 +1,21 @@
-//your code here
-let mp={};
+let mp = {};
 let touristSports = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
-let articleLessArray=[];
-let articleLessIteam=[];
-for(let i=0; i<touristSports[i].length; i++)
-	{
-   articleLessItem=touristSports[i].replace(/\bthe\b|\ban\b|\ba\b/gi, " ").trim();
-	{
-		articleLessArraay.push(articleLessIteam);
-     mp[articleLessIteam]=touristSpots[i];
-	}
+let articleLessArray = [];
 
-    articleLessArray.sort();
-   let ans = [];
-   for(let i of articleLessArray){
-	   ans.push(mp[i]);
-   }
+// Create a mapping of article-less names to original names
+for (let i = 0; i < touristSports.length; i++) {
+  let articleLessItem = touristSports[i].replace(/\b(?:the|an|a)\b/gi, "").trim();
+  articleLessArray.push(articleLessItem);
+  mp[articleLessItem] = touristSports[i];
+}
+
+articleLessArray.sort();
+
+let ans = [];
+for (let i of articleLessArray) {
+  ans.push(mp[i]);
+}
+
 console.log(ans);
+
